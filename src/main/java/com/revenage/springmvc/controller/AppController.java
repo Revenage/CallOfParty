@@ -7,8 +7,8 @@ import javax.validation.Valid;
 
 import com.revenage.springmvc.model.UserEvent;
 import com.revenage.springmvc.model.UserFriend;
-import com.revenage.springmvc.service.UserEventService;
-import com.revenage.springmvc.service.UserFriendService;
+import com.revenage.springmvc.service.EventService;
+import com.revenage.springmvc.service.FriendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
@@ -25,10 +25,10 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class AppController {
 
 	@Autowired
-	UserEventService eventService;
+	EventService eventService;
 
 	@Autowired
-	UserFriendService friendService;
+	FriendService friendService;
 
 	@Autowired
 	MessageSource messageSource;

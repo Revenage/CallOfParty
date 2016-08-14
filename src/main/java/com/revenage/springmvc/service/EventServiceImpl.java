@@ -2,7 +2,7 @@ package com.revenage.springmvc.service;
 
 import java.util.List;
 
-import com.revenage.springmvc.dao.UserEventDao;
+import com.revenage.springmvc.dao.EventDao;
 import com.revenage.springmvc.model.UserEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service("employeeService")
 @Transactional
-public class UserEventServiceImpl implements UserEventService {
+public class EventServiceImpl implements EventService {
 
 	@Autowired
-	private UserEventDao dao;
+	private EventDao dao;
 	
 	public UserEvent findById(int id) {
 		return dao.findById(id);

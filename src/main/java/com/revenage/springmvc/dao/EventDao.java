@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.revenage.springmvc.model.UserEvent;
 
-public interface UserEventDao {
+public interface EventDao {
 
 	UserEvent findById(int id);
 

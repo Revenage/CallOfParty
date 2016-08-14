@@ -5,7 +5,7 @@ import java.util.List;
 import com.revenage.springmvc.model.UserEvent;
 import com.revenage.springmvc.model.UserFriend;
 
-public interface UserEventService {
+public interface EventService {
 
 	UserEvent findById(int id);
 	

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by revenage on 8/14/16.
  */
-public interface UserFriendDao {
+public interface FriendDao {
 
     UserFriend findById(int id);
 

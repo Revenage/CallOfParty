@@ -9,7 +9,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
 @Repository("userEventDao")
-public class UserEventDaoImpl extends AbstractDao<Integer, UserEvent> implements UserEventDao {
+public class EventDaoImpl extends AbstractDao<Integer, UserEvent> implements EventDao {
 
 	public UserEvent findById(int id) {
 		return getByKey(id);

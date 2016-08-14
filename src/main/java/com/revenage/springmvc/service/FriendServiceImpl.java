@@ -1,8 +1,7 @@
 package com.revenage.springmvc.service;
 
-import com.revenage.springmvc.dao.UserFriendDaoImpl;
+import com.revenage.springmvc.dao.FriendDaoImpl;
 import com.revenage.springmvc.model.UserFriend;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,10 +13,10 @@ import java.util.List;
  */
 @Service("friendService")
 @Transactional
-public class UserFriendServiceImpl implements UserFriendService{
+public class FriendServiceImpl implements FriendService {
 
     @Autowired
-    private UserFriendDaoImpl dao;
+    private FriendDaoImpl dao;
 
     public UserFriend findById(int id) {
         return dao.findById(id);

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by revenage on 8/14/16.
  */
-public interface UserFriendService {
+public interface FriendService {
     UserFriend findById(int id);
 
     void saveUserFriend(UserFriend userFriend);
