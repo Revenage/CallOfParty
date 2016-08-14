@@ -26,6 +26,14 @@ public class UserFriend {
     @JoinColumn(name = "event_id")
     private UserEvent userEvent;
 
+    public UserEvent getUserEvent() {
+        return userEvent;
+    }
+
+    public void setUserEvent(UserEvent userEvent) {
+        this.userEvent = userEvent;
+    }
+
     public int getId() {
         return id;
     }

@@ -1,5 +1,6 @@
 package com.revenage.springmvc.dao;
 
+import com.revenage.springmvc.model.UserEvent;
 import com.revenage.springmvc.model.UserFriend;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
