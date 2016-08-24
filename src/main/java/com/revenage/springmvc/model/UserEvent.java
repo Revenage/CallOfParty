@@ -18,6 +18,7 @@ public class UserEvent {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "event_id", unique=true, nullable = false)
 	private int id;
 
 	@Size(min=3, max=50)

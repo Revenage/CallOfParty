@@ -1,10 +1,14 @@
 package com.revenage.springmvc.dao;
 
+import com.revenage.springmvc.configuration.HibernateUtil;
 import com.revenage.springmvc.model.UserEvent;
 import com.revenage.springmvc.model.UserFriend;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,8 +23,18 @@ public class FriendDaoImpl extends AbstractDao<Integer, UserFriend> implements F
         return getByKey(id);
     }
 
+    //SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+    //Session session = sessionFactory.openSession();
+
+    //UserEvent userEvent = new UserEvent();
+
     public void saveUserFriend(UserFriend userFriend) {
-        persist(userFriend);
+        //persist(userFriend);
+        //userFriend.setUserEvent(userEvent);
+       // userEvent.getStockDailyRecords().add(userFriend);
+
+        //session.beginTransaction();
+        //session.save(userFriend);
     }
 
     public void deleteUserFriendByName(String name) {

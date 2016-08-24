@@ -27,7 +27,7 @@ public class UserFriend {
     private UserEvent userEvent;
 
     public UserEvent getUserEvent() {
-        return userEvent;
+        return this.userEvent;
     }
 
     public void setUserEvent(UserEvent userEvent) {
