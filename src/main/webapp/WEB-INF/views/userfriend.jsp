@@ -7,7 +7,7 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Registration Form</h2>
+<h2>Edit Friend</h2>
 
 <form:form method="POST" modelAttribute="userFriend">
     <form:input type="hidden" path="id" id="id"/>
